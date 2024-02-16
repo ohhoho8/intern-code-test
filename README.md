@@ -29,3 +29,7 @@ docker compose up 명령어로 해당 환경이 구동되게 만들어 주세요
 ## 참고
 초기 보일러 플레이팅은 커밋해 놓았습니다. 익숙하다면 바로 코드에 집중할 수 있을겁니다.
 노트북이 없다면, 미리 말씀해 주세요. 내부에 해당 코드 클론해서 구동해 놓을께요.
+
+## notion, linear
+https://www.notion.so/789f2fe92e40421e8a3fdee6f48f3519?pvs=4
+https://linear.app/ohhoho/team/OHH/cycle/active
