@@ -37,5 +37,6 @@ async def runTask(redis_conn):
         num_objects = count_objects(redis_conn)
         objects = get_objects(num_objects, redis_conn)
         print(objects)
+        return objects
     except Exception as e:
         print(f"An error occurred: {e}")
