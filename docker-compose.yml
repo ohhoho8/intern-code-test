@@ -1,7 +1,7 @@
 version: "3.6"
 
 services:
-  test_redis:
+  redis_queue:
     container_name: myproj_redis
     hostname: redis
     image: redis:latest
@@ -13,15 +13,15 @@ services:
     restart: always
 
   fast_api:
-    container_name: my_api
+    container_name: intern_fast_api
     build:
       context: ./
       dockerfile: ./Dockerfile
     ports:
       - "5057:5057"
-    working_dir: /home/myproj
+    working_dir: /opt/workspace
     volumes:
-      - ./:/home/myproj
+      - ./:/opt/workspace
     depends_on:
-      - test_redis
+      - redis_queue
     command: uvicorn api:app --host 0.0.0.0 --port 5057 --reload
